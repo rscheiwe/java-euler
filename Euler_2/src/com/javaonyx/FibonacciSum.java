@@ -13,15 +13,13 @@ public class FibonacciSum {
 
     List fibSeq = new ArrayList();
 
-    public void fibonacciSeq() {
+    private int fibonacciSeq(int num) {
+        System.out.println(fibSeq);
+    }
+
+    public void fibonacciSeqRun() {
         int num = getN();
-        if(n <= 1) {
 
-        }
-
-        for(int i = 2; i < num; i++) {
-
-        }
     }
 
 }
