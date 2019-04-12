@@ -2,7 +2,6 @@ package com.javaonyx;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.stream.IntStream;
 
 public class ThreeFive {
 
@@ -23,7 +22,7 @@ public class ThreeFive {
 //            System.out.println("The divisibles are:\n ");
         }
 
-        List divArr = new ArrayList();
+        List<Integer> divArr = new ArrayList<Integer>();
 
         for(int i = 0; i < num; i++) {
             if(i % 3 == 0 || i % 5 == 0) { divArr.add(i); }
