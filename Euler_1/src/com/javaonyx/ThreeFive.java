@@ -1,7 +1,7 @@
 package com.javaonyx;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ThreeFive {
 
@@ -12,15 +12,15 @@ public class ThreeFive {
 
     public ThreeFive( int n ) { this.n = n; }
 
-    public void runThreeFive() {
+    public int runThreeFive() {
         int num = getN();
         int sum = 0;
 
-        {
-            System.out.println("Your Number is: " + num);
-            System.out.println("<------------------>");
-//            System.out.println("The divisibles are:\n ");
-        }
+//        {
+//            System.out.println("Your Number is: " + num);
+//            System.out.println("<------------------>");
+////            System.out.println("The divisibles are:\n ");
+//        }
 
         List<Integer> divArr = new ArrayList<Integer>();
 
@@ -30,7 +30,8 @@ public class ThreeFive {
         for(Integer i : ( ArrayList<Integer> )divArr) { sum += i; }
 
 //        System.out.println(divArr);
-        System.out.println("The SUM is: " + sum);
-
+//        System.out.println("The SUM is: " + sum);
+        
+        return sum;
     }
 }
